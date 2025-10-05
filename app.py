@@ -36,9 +36,12 @@ with st.sidebar:
 # ===========================
 # 3️⃣ Load PDFs & Build Vectorstore
 # ===========================
+# --- after uploading and building vectorstore ---
 if uploaded_files:
     with st.spinner("Processing uploaded PDFs and updating knowledge base..."):
-        vectordb = persist_documents_to_chroma(uploaded_files)
+        vectordb = persist_documents_to_chroma(uploaded_files, persist_directory=None)  # None => in-memory safe for Streamlit Cloud
+        # Save the vectordb into session state so the retriever tool can access it
+        st.session_state['vectordb'] = vectordb
         st.success(f"✅ Knowledge base updated with {len(uploaded_files)} file(s).")
 
 # ===========================
