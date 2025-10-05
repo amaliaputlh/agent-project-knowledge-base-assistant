@@ -1,0 +1,38 @@
+# ===== Python Cache & Build =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.log
+*.sqlite3
+*.db
+
+# ===== Virtual Environment =====
+.venv/
+venv/
+env/
+.conda/
+.idea/
+.vscode/
+
+# ===== Streamlit Cache =====
+.streamlit/
+.streamlit/secrets.toml
+
+# ===== Data & Temporary Files =====
+data/
+logs/
+*.csv
+*.json
+*.parquet
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+
+# ===== Credentials =====
+.env
+apikey.txt
+

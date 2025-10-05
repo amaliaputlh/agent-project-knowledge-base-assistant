@@ -1,0 +1,25 @@
+# Core Framework
+streamlit
+langchain
+langchain-community
+langchain-core
+langchain-chroma
+langchain-huggingface
+langgraph
+
+# Vector Store & Embeddings
+chromadb
+sentence-transformers
+huggingface-hub
+
+# PDF Processing
+pypdf
+pdfplumber
+
+# Google Gemini (optional for chat)
+google-generativeai
+langchain-google-genai
+
+# Utils
+python-dotenv
+tqdm
